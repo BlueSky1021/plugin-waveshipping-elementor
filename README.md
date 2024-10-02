@@ -1,0 +1,1 @@
+# plugin-chr-elementor-defaults

@@ -1,0 +1,19 @@
+.chr-repsonsive-toggle-button {
+  cursor: pointer;
+
+  &.close {
+    display: none;
+  }
+}
+
+.chr-responsive-menu-wrapper {
+  transition: right 0.6s ease;
+
+  &.opened {
+    right: 0 !important; // Override default container css
+  }
+}
+
+a.elementor-item.has-submenu {
+  pointer-events: none; // Fix element dropdown menu can't close bug.
+}

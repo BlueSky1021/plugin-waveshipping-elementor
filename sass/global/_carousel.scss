@@ -1,0 +1,87 @@
+.chr-carousel-wrapper {
+
+  .elementor-main-swiper {
+    width: 100% !important; // Override default element css 95% width
+  }
+  
+  .elementor-swiper-button {
+    display: block !important; // Override default element css 
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    top: auto !important; // Override default element css 
+    transform: translateY(0) !important; // Override default element css 
+    color: transparent;
+    font-size: 0;
+    position: absolute;
+    background: black url(../img/arrow-stem-right-white.svg) no-repeat center;
+    background-size: 12px 12px;
+    border-radius: 50%;
+
+    svg {
+      display: none;
+    }
+
+    body[data-elementor-device-mode='tablet'] & {
+      width: 44px;
+      height: 44px;
+      background-size: 14px 14px;
+    }
+
+    body[data-elementor-device-mode='desktop'] & {
+      width: 48px;
+      height: 48px;
+
+      &:hover {
+        background-color: var(--e-global-color-primary);
+      }
+    }
+
+    &.elementor-swiper-button-prev {
+      transform: translateY(0) rotate(180deg)!important; // Override default element css 
+      position: relative;
+      margin-top: 16px;
+      left: 0;
+  
+      body[data-elementor-device-mode='tablet'] & {
+        margin-top: 24px;
+      }
+
+      body[data-elementor-device-mode='desktop'] & { 
+        margin-top: 32px;
+      }
+    }
+
+    &.elementor-swiper-button-next {
+      right: auto;
+      left: 48px;
+      bottom: 0;
+      
+      body[data-elementor-device-mode='tablet'] & {
+        left: 52px;
+      }
+
+      body[data-elementor-device-mode='desktop'] & { 
+        left: 56px;
+      }
+    }
+  }
+
+  &--article-list {
+
+    .swiper {
+      
+      body[data-elementor-device-mode='desktop'] & { 
+        width: calc(100% + 326px);
+      }
+    }
+  }
+}
+
+.chr-logo-slider {
+
+  .swiper-wrapper{
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important; 
+  }
+}

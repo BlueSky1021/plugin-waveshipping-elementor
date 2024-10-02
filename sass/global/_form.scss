@@ -1,0 +1,29 @@
+.elementor-select-wrapper .select-caret-down-wrapper {
+  width: 12px;
+  height: 12px;
+  background: url(../img/arrow-down.svg) no-repeat center;
+  background-size: contain;
+
+  svg {
+    display: none !important; // Override default elementor style
+  }
+}
+
+.chr-form-section-title {
+  font-family: var(--e-global-typography-primary-font-family) sans-serif;
+  color: var(--e-global-color-primary);
+  font-weight: 800;
+  border-bottom: 1px solid var(--e-global-color-c125c13);
+
+  body[data-elementor-device-mode='desktop'] & {
+    font-size: 24px;
+    padding-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.flatpickr-current-month input.numInput.cur-year {
+  padding: 2px;
+  font-size: 12px;
+}

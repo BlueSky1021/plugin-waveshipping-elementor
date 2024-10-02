@@ -1,0 +1,49 @@
+// For custom aspect ratio
+.chr-aspect-ratio-1-1,
+.chr-aspect-ratio-3-2,
+.chr-aspect-ratio-4-3,
+.chr-aspect-ratio-9-16,
+.chr-aspect-ratio-16-9,
+.chr-aspect-ratio-21-9 { // Custom class in elementor
+  position: relative;
+  overflow: hidden;
+
+  div,
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important; // Override default element width
+    height: 100% !important; // Override default element height
+    object-fit: cover;
+  }
+}
+
+.chr-aspect-ratio-1-1 {
+  padding-bottom: 100%;
+}
+
+.chr-aspect-ratio-3-2 {
+  padding-bottom: 66.6%;
+}
+
+.chr-aspect-ratio-4-3 {
+  padding-bottom: 75%;
+}
+
+.chr-aspect-ratio-9-16 {
+  padding-bottom: 177.8%;
+}
+
+.chr-aspect-ratio-16-9 {
+  padding-bottom: 56.25%;
+}
+
+.chr-aspect-ratio-21-9 {
+  padding-bottom: 42%;
+}
+
+// Remove icon widget unwanted gap
+.elementor-icon-wrapper {
+  line-height: 0;
+}
